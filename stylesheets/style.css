@@ -1,0 +1,110 @@
+/********************************************************************
+      File: /~snguye/style.css
+      Author: Son Nguyen, UMass Lowell Computer Science Student
+      Course: 91.461 GUI Programming I
+      E-mail: son_nguyen@student.uml.edu 
+      Date Created: September 23, 2014
+      Description: This is CSS page use for to style every page.
+      Updated by Son Nguyen on September 23, 2014 at 11:59 PM
+*********************************************************************/
+
+
+
+/*font line and style in side the body*/
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #e2edff;
+    line-height: 1.25;
+    padding: 15px;
+}
+
+
+/*making all the header a default font, color, background color */
+h1, h2, h3{
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    /*font-size: x-large;*/
+    background-color: navy;
+    color:white;
+}
+
+
+/*h2, h3 have medium*/
+h2{
+    font-size: medium;
+    font-weight: normal;
+    
+}
+
+
+h3{
+    font-size: medium;
+    font-weight: normal;
+}
+
+
+/*link size small */
+li{
+    font-size: small;
+}
+
+
+/*all the paragraph small and navy*/
+p{
+    font-size: small;
+    color: navy;
+}
+
+/*specifies a section that is quoted from another source*/
+blockquote p{
+ font-style: italic;
+}
+
+/*
+#tagline p{
+	font-style: italic;
+	font-family: Georgia, Times, serif;
+} 
+*/
+
+ 
+a:link, a:visited{
+    color: black;
+    font-weight: bold;
+	
+} 
+
+
+/*most of the reference link and email link new default */
+div p a{
+    font-style: italic;
+    font-family: Georgia, serif;
+    font-size: small;
+    
+}
+
+
+/*all paragraph under div default setting*/
+div p{
+    font-style: italic;
+    font-family: Georgia, serif;
+    font-size: small;
+}
+
+
+
+/*visited linked with color gray*/
+a:visited{
+	color: purple;
+}
+
+
+
+/*color of links when click*/
+a:active {
+    color: aqua;
+    background-color: navy;
+}
+
+
+/**** .classname{  }****/
+/**** <em class="classname ">   </em>****/
