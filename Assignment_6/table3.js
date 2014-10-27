@@ -12,7 +12,8 @@
 function create_Table() {
     // using remove to refresh
     var remove_Table = document.getElementById("aTable");
-    if (remove_Table != null)
+    
+	if (remove_Table != null)
         remove_Table.remove();
 
     // getting the four values
@@ -119,3 +120,4 @@ function output(colStartVal, colEndVal, rowStartVal, rowEndVal) {
     // setting an id for tbl
     tbl.setAttribute("id", "aTable");
 }
+
