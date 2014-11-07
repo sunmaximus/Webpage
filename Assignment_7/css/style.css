@@ -1,0 +1,117 @@
+/********************************************************************
+      File: /~snguyen/Assignment_6/css/style.css
+      Author: Son Nguyen, UMass Lowell Computer Science Student
+      Course: 91.461 GUI Programming I
+      E-mail: son_nguyen@student.uml.edu 
+      Date Created: October 26, 2014
+      Description: This is CSS page use for to style every page.
+      Updated by Son Nguyen on October 26, 2014 at 11:59 PM
+*********************************************************************/
+
+/*font line and style in side the body*/
+body {
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  background-color: #e2edff;
+  line-height: 1.25;
+  padding: 15px;
+}
+/*********************************************************************/
+/*nagivation links style*/ 
+
+#navbar {
+  width: 100%;
+  float: left;
+  margin: 0 0 3em 0;
+  padding: 0;
+  list-style: none;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc; 
+  border-top: 1px solid #ccc; 
+}
+
+#navbar a{
+  display:inline-block;
+  float: left;
+  margin-right: 1px;
+} 
+
+/*remove bullets in list*/ 
+#navbar a{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+
+/*Style of block borders seperating the navigation links*/
+#navbar a{
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #069;
+  /*text-align: center ;*/
+ 
+}
+
+/*Display the color of background color when mouse touching the link*/
+#navbar a:hover {
+  color: #c00;
+  background-color: #fff; 
+}
+
+
+
+/* End navigation bar styling. */
+/******************************************************************************/
+
+
+
+
+/* visited link */
+a:visited {
+  color: purple;
+  text-decoration: underline; 
+  text-decoration: overline;
+}
+
+
+/* selected link */
+a:active {
+  color: white;
+  text-decoration: underline;
+}
+
+
+/*Target the First Title of h1 only*/
+.bannerWord {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 1em 15px;
+  color: #fff;
+  background-color: #069;
+  margin: 0; 
+ 
+}
+
+
+/*Header Style*/
+h2, h3{
+ font-family:"Trebuchet MS", Arial, sans-serif;
+ font-weight: bold;
+ 
+ color:#069;
+}
+
+h2{
+    font-size: large;
+    font-weight: normal;
+    
+}
+
+
+h3{
+    font-size: large;
+    font-weight: normal;
+}
+
+

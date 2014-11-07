@@ -1,0 +1,208 @@
+/********************************************************************
+      File: /~snguyen/Assignment_5/TextStyles-v8.css
+      Author: Son Nguyen, UMass Lowell Computer Science Student
+      Course: 91.461 GUI Programming I
+      E-mail: son_nguyen@student.uml.edu 
+      Date Created: September 23, 2014
+      Description: This is CSS page use for to style every page.
+      Updated by Son Nguyen on October 6, 2014 at 11:59 PM
+*********************************************************************/
+
+/*font line and style in side the body*/
+body {
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  background-color: #e2edff;
+  line-height: 1.25;
+  padding: 15px;
+}
+/*********************************************************************/
+/*nagivation links style*/ 
+
+.navigation {
+  width: 100%;
+  float: left;
+  margin: 0 0 3em 0;
+  padding: 0;
+  list-style: none;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc; 
+  border-top: 1px solid #ccc; 
+}
+
+.navigation li{
+  display:inline-block;
+  float: left;
+  margin-right: 1px;
+} 
+
+/*remove bullets in list*/ 
+.navigation ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+
+/*Style of block borders seperating the navigation links*/
+.navigation li a{
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #069;
+  /*text-align: center ;*/
+ 
+}
+
+/*Display the color of background color when mouse touching the link*/
+.navigation li a:hover {
+  color: #c00;
+  background-color: #fff; 
+}
+
+.navigation ul ul{
+  position: absolute; /* This position child elements under the parent element*/
+  display: none;
+}
+
+/*Now the list items will be displayed when hover over the parent list which is referenced in li:hover*/
+.navigation ul li:hover ul{
+  display: block; 
+  padding: 0px 0px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #069; 
+  
+}
+
+/*color when mouse moving to the child links with background color white and red when touching the links*/
+.navigation ul ul li  a:hover{
+  color: #c00;
+  background-color: #fff; 
+
+}
+
+/*Style for dropdown links*/
+.navigation li:hover ul a {
+  background: #f3f3f3;
+  color: #2f3036;
+  height: 40px;
+  min-width:100px;
+  line-height: 40px;
+  border-top: 1px solid #ccc;
+     
+}
+
+/*Make dropdown links vertical*/
+.navigation li ul li {
+  display: block;
+  float: none;
+}
+
+/*Prevent text wrapping*/
+.navigation li ul li a {
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
+}
+
+/*This is for the arrow icon*/
+.navigation ul li img{
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
+/* End navigation bar styling. */
+/******************************************************************************/
+
+.darrow{
+  font-size: 9pt;
+ 
+  right: 4px;
+}
+
+
+/* visited link */
+a:visited {
+  color: purple;
+  text-decoration: underline; 
+  text-decoration: overline;
+}
+
+
+/* selected link */
+a:active {
+  color: white;
+  text-decoration: underline;
+}
+
+
+/* major header properties */
+.title, .author, .authorsTitle {
+  font-family: Verdana, Helvetica, Arial, sans-serif ;
+  color: blue ;
+  margin: 0 0 0 0 ;
+}
+/* author's title header refinement */
+.authorsTitle {
+  font-weight: normal ;
+  margin-left: 1.7em ;
+}
+
+/* minor header properties */
+.location, .locationLabel, .date {
+  color: blue ;
+}
+/* minor header refinements */
+.location, .locationLabel {
+  margin-bottom: 0 ;
+}
+/* additional minor header refinements */
+.locationLabel {
+  font-style : italic ;
+  font-weight: normal ;
+}
+/* additional minor header refinements */
+.location, .date {
+  margin-top: 0 ;
+}
+
+/* first letter of main text for Safari and Chrome */
+h3.date + p:first-letter {
+  font-size: 3em ;
+  font-weight: bold ;
+  float: left ;
+  color: red ;
+  margin-right: 1px ;
+  margin-top: -0.15em ;
+}
+
+/* first letter of main text for Firefox */
+h3.date + p.Firefox:first-letter {
+  margin-top: 0.15em ;
+}
+
+/*reuse code from JHM*/
+#divRenekton {
+  float: right ;
+  padding: 10px ;
+  margin: 30px 0px 10px 20px ;  /* T R B L */
+}
+#divRenekton p:first-child {
+  text-align: right ;
+}
+
+#divRenekton p:first-child img {
+  border: 1px solid black ;
+}
+
+
+/*Target the First Title of h1 only*/
+.bannerWord {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 1em 15px;
+  color: #fff;
+  background-color: #069;
+  margin: 0; 
+ 
+}
